@@ -16,7 +16,7 @@ def signIn(meeting_id, password):
 
 
     # Now we operate the button to join a meeting
-    join = pyautogui.locateCenterOnScreen("automation Zoom\zoom_join1.png")
+    join = pyautogui.locateCenterOnScreen("Zoom-Automation\zoom_join1.png")
     pyautogui.moveTo(join)
     pyautogui.click()
     
@@ -24,7 +24,7 @@ def signIn(meeting_id, password):
 
 
     # meeting id
-    meetingidbtn = pyautogui.locateCenterOnScreen("automation Zoom\meetingid.jpg")
+    meetingidbtn = pyautogui.locateCenterOnScreen("Zoom-Automation\meetingid.jpg")
     pyautogui.moveTo(meetingidbtn)
     pyautogui.write(meeting_id)
     time.sleep(1)
@@ -34,7 +34,7 @@ def signIn(meeting_id, password):
 
 
     #passcode blank
-    passcode= pyautogui.locateCenterOnScreen("automation Zoom\passcode.jpg")
+    passcode= pyautogui.locateCenterOnScreen("Zoom-Automation\passcode.jpg")
     pyautogui.moveTo(passcode)
     pyautogui.write(password)
     time.sleep(1)
@@ -44,7 +44,7 @@ def signIn(meeting_id, password):
     
 
 #Read excel sheet
-df = pd.read_excel('automation Zoom\zoom1.xlsx') #df stands for data frame
+df = pd.read_excel('Zoom-Automation\zoom1.xlsx') #df stands for data frame
 
 
 while True:
